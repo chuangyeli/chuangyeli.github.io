@@ -64,24 +64,33 @@ a { text-decoration: none; color: inherit; }
   background: color-mix(in srgb, var(--bc) 12%, #fff); border: 1px solid color-mix(in srgb, var(--bc) 24%, #fff);
   border-radius: 999px; padding: 3px 12px; margin-bottom: 6px; }
 
-/* 分类页：彩色渐变横幅 */
-.cat-hero { --cat: #4f46e5; display: flex; align-items: center; gap: 18px; margin: 28px 0 20px; padding: 28px 30px; border-radius: 18px;
-  color: #fff; background: linear-gradient(120deg, color-mix(in srgb, var(--cat) 92%, #0b1020), color-mix(in srgb, var(--cat) 58%, #7c3aed));
-  box-shadow: 0 12px 30px color-mix(in srgb, var(--cat) 32%, transparent); }
-.cat-hero-icon { font-size: 40px; width: 72px; height: 72px; display: inline-flex; align-items: center; justify-content: center;
-  background: rgba(255,255,255,.18); border-radius: 16px; }
-.cat-hero-txt h1 { font-size: 28px; font-weight: 800; }
-.cat-hero-txt p { margin-top: 4px; opacity: .92; font-size: 14px; }
+/* 分类页/月份页：简洁白卡页头 */
+.cat-head { --cat: #4f46e5; display: flex; align-items: center; gap: 16px; margin: 30px 0 20px; padding: 22px 24px;
+  background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(28,35,51,.04); }
+.cat-head-icon { font-size: 30px; width: 58px; height: 58px; display: inline-flex; align-items: center; justify-content: center;
+  border-radius: 14px; background: color-mix(in srgb, var(--cat) 13%, #fff); border: 1px solid color-mix(in srgb, var(--cat) 22%, #fff); }
+.cat-head-txt { flex: 1; min-width: 0; }
+.cat-head-txt h1 { font-size: 24px; font-weight: 800; }
+.cat-head-txt p { margin-top: 3px; color: var(--muted); font-size: 13px; }
+.cat-head-count { flex-shrink: 0; min-width: 54px; text-align: center; font-size: 20px; font-weight: 800; color: var(--cat);
+  background: color-mix(in srgb, var(--cat) 10%, #fff); border-radius: 12px; padding: 8px 10px; }
 
 /* 分类页：左标签卡片（图2 风格） */
-.cat-res-card { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px;
-  display: flex; align-items: center; gap: 16px;
+.cat-list { display: flex; flex-direction: column; gap: 14px; }
+.cat-res-card { background: var(--card); border: 1px solid var(--line); border-radius: 18px; padding: 22px 26px;
+  display: flex; align-items: center; gap: 18px; width: 100%;
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
-.cat-res-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(28,35,51,.08); border-color: #d5d8e2; }
-.cat-res-tag { --tag: #4f46e5; flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 700; color: var(--tag);
-  background: color-mix(in srgb, var(--tag) 12%, #fff); border: 1px solid color-mix(in srgb, var(--tag) 26%, #fff);
-  border-radius: 999px; padding: 8px 16px; white-space: nowrap; }
+.cat-res-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(28,35,51,.10); border-color: #d5d8e2; }
+.cat-res-tag { --tag: #4f46e5; flex-shrink: 0; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--tag);
+  background: color-mix(in srgb, var(--tag) 10%, #fff); border: 1px solid color-mix(in srgb, var(--tag) 22%, #fff);
+  border-radius: 999px; padding: 10px 18px; white-space: nowrap; }
 .cat-res-main { flex: 1; min-width: 0; }
+/* 月份页等单列场景下的通用资源卡片也放大为全宽大气样式 */
+.cat-list .res-card { padding: 22px 26px; border-radius: 18px; }
+.cat-list .res-title { font-size: 17px; }
+.cat-list .res-meta { font-size: 13px; }
+.cat-list .badge { font-size: 13px; padding: 4px 14px; }
 
 /* Page title（保留兼容） */
 .page-title { padding: 34px 0 8px; }
@@ -108,9 +117,10 @@ a { text-decoration: none; color: inherit; }
   .nav-toggle { display: block; }
   .hero h1 { font-size: 26px; }
   .card-grid { grid-template-columns: 1fr; }
-  .cat-hero { padding: 20px; gap: 12px; }
-  .cat-hero-icon { width: 56px; height: 56px; font-size: 30px; }
-  .cat-hero-txt h1 { font-size: 22px; }
+  .cat-head { padding: 16px; gap: 12px; }
+  .cat-head-icon { width: 48px; height: 48px; font-size: 26px; }
+  .cat-head-txt h1 { font-size: 20px; }
+  .cat-head-count { min-width: 44px; font-size: 17px; }
   .cat-res-card { flex-wrap: wrap; gap: 10px; }
   .cat-res-tag { padding: 6px 12px; font-size: 12px; }
 }
