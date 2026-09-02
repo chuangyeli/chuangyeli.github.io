@@ -51,12 +51,16 @@ a { text-decoration: none; color: inherit; }
 
 /* Resource cards */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
-/* 卡片很少时全宽居中，不显空旷 */
-.card-grid.cat-single { grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; }
-.card-grid.cat-single .res-card { padding: 20px 24px; }
-.card-grid.cat-single .res-title { font-size: 17px; }
-.card-grid.cat-single .res-meta { font-size: 13px; }
-.card-grid.cat-single .badge { font-size: 13px; padding: 4px 14px; }
+/* 分类/月份页固定 3 列一行（每页 21 张 = 3×7 行） */
+.card-grid.three { grid-template-columns: repeat(3, 1fr); }
+
+/* 分页导航 */
+.pager { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin-top: 28px; }
+.page-link { display: inline-flex; align-items: center; justify-content: center; min-width: 36px; height: 36px; padding: 0 12px; border-radius: 9px;
+  border: 1px solid var(--line); background: var(--card); color: var(--text); font-size: 14px; text-decoration: none; transition: all .15s ease; }
+.page-link:hover { border-color: var(--accent); color: var(--accent); }
+.page-link.current { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+.page-link.disabled { opacity: .45; pointer-events: none; }
 .res-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: flex; align-items: center; gap: 12px;
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .res-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(28,35,51,.08); border-color: #d5d8e2; }
@@ -116,6 +120,11 @@ a { text-decoration: none; color: inherit; }
 /* Empty state */
 .empty { text-align: center; color: var(--muted); padding: 40px 0; }
 
+/* Tablet */
+@media (max-width: 1100px) {
+  .card-grid.three { grid-template-columns: repeat(2, 1fr); }
+}
+
 /* Mobile */
 @media (max-width: 760px) {
   .site-nav { display: none; position: absolute; top: 60px; left: 0; right: 0; background: #fff; flex-direction: column; padding: 10px 16px; border-bottom: 1px solid var(--line); }
@@ -123,6 +132,7 @@ a { text-decoration: none; color: inherit; }
   .nav-toggle { display: block; }
   .hero h1 { font-size: 26px; }
   .card-grid { grid-template-columns: 1fr; }
+  .card-grid.three { grid-template-columns: 1fr; }
   .cat-head { padding: 16px; gap: 12px; }
   .cat-head-icon { width: 48px; height: 48px; font-size: 26px; }
   .cat-head-txt h1 { font-size: 20px; }
