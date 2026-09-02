@@ -51,6 +51,12 @@ a { text-decoration: none; color: inherit; }
 
 /* Resource cards */
 .card-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 14px; }
+/* 卡片很少时全宽居中，不显空旷 */
+.card-grid.cat-single { grid-template-columns: 1fr; max-width: 900px; margin: 0 auto; }
+.card-grid.cat-single .res-card { padding: 20px 24px; }
+.card-grid.cat-single .res-title { font-size: 17px; }
+.card-grid.cat-single .res-meta { font-size: 13px; }
+.card-grid.cat-single .badge { font-size: 13px; padding: 4px 14px; }
 .res-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: flex; align-items: center; gap: 12px;
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .res-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(28,35,51,.08); border-color: #d5d8e2; }
