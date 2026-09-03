@@ -1,0 +1,23 @@
+{
+  "version": "1.0.0",
+  "mandatory": false,
+  "notes": "夸父资源导航发布助手 v1.0.0\n\n【本次更新】\n· 首版正式发布\n\n【使用说明】\n· 优先使用 GitHub 直连自动更新（推荐）\n· 网络受限时可改用夸克网盘手动下载安装",
+  "sha256": "73EDB4C46DE6147BC8B6FD70316C814B11C7D308DC739D9940ABFAA5527F7ADB",
+  "downloads": [
+    {
+      "id": "github",
+      "name": "GitHub 直连（推荐，自动更新）",
+      "mode": "auto",
+      "primary": true,
+      "url": "https://github.com/chuangyeli/QuarkPublisherPro-release/releases/download/v1.0.0/QuarkPublisherPro.exe"
+    },
+    {
+      "id": "netdisk",
+      "name": "夸克网盘（手动下载安装）",
+      "mode": "manual",
+      "primary": false,
+      "url": "https://pan.quark.cn/s/请替换为你的夸克分享链接"
+    }
+  ],
+  "_说明": "更新清单模板。软件启动时读取本文件，version 高于本地版本号即提示更新；mandatory=true 为强制更新（弹窗只允许立即更新）；downloads 双线：mode=auto 走自动下载覆盖，mode=manual 提示用户手动下载后替换 exe。每次发新版请同步更新 version/notes/sha256/url，并把新 exe 上传到 GitHub Release（tag 用 v<版本号>）。"
+}
