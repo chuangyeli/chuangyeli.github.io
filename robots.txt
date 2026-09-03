@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /_ad_slots/
+
+Sitemap: https://chuangye.de5.net/sitemap.xml
