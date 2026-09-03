@@ -1,7 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "mandatory": false,
-  "notes": "夸父资源导航发布助手 v1.0.0\n\n【本次更新】\n· 首版正式发布\n\n【使用说明】\n· 优先使用 GitHub 直连自动更新（推荐）\n· 网络受限时可改用夸克网盘手动下载安装",
+  "notes": "测试更新弹窗 v1.0.1\\n新增：自动更新功能",
   "sha256": "73EDB4C46DE6147BC8B6FD70316C814B11C7D308DC739D9940ABFAA5527F7ADB",
   "downloads": [
     {
