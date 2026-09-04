@@ -2,9 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://chuangye.de5.net/</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>1.0</priority></url>
   <url><loc>https://chuangye.de5.net/category/book.bak_1788432423.html</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://chuangye.de5.net/category/movies.html</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
-  <url><loc>https://chuangye.de5.net/category/movies_p2.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
-  <url><loc>https://chuangye.de5.net/category/movies_p3.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://chuangye.de5.net/category/self-media.html</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://chuangye.de5.net/category/self-media_p2.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://chuangye.de5.net/category/self-media_p3.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
@@ -27,5 +24,7 @@
   <url><loc>https://chuangye.de5.net/category/self-media_p20.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://chuangye.de5.net/category/self-media.bak_1788432560.html</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
   <url><loc>https://chuangye.de5.net/category/tools.html</loc><lastmod>2026-09-04</lastmod><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://chuangye.de5.net/category/tools_p2.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://chuangye.de5.net/category/tools_p3.html</loc><lastmod>2026-09-04</lastmod><changefreq>weekly</changefreq><priority>0.6</priority></url>
   <url><loc>https://chuangye.de5.net/month/202609.html</loc><lastmod>2026-09-04</lastmod><changefreq>monthly</changefreq><priority>0.6</priority></url>
 </urlset>
