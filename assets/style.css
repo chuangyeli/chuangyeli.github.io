@@ -61,6 +61,8 @@ a { text-decoration: none; color: inherit; }
 .page-link:hover { border-color: var(--accent); color: var(--accent); }
 .page-link.current { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 .page-link.disabled { opacity: .45; pointer-events: none; }
+.page-ellipsis { display: inline-flex; align-items: center; justify-content: center; min-width: 28px; height: 36px;
+  color: var(--muted); font-size: 14px; user-select: none; }
 .res-card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 16px 18px; display: flex; align-items: center; gap: 12px;
   transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease; }
 .res-card:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(28,35,51,.08); border-color: #d5d8e2; }
